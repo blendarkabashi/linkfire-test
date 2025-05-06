@@ -8,7 +8,6 @@ interface Props {
 
 export default async function ArtistDetailPage({ params }: Props) {
   const { id } = await params;
-
   return (
     <Suspense fallback={<Loading />}>
       <ArtistDetails id={id} />
