@@ -24,6 +24,10 @@ But i have also installed REACT QUERY plugin, just to demonstrate how i would us
 
 I have also used Typescript, even though it wasn't one of the requirements. This is because i wanted to show it's importance in your application in particular, because it has so many users and a big team is working on it, you need to maintain a strict approach to types.
 
+## Zustand Store
+
+I haven't really used the store, i initialized it and set the data that i "fetch" from the artists, which i could then use to display the data from the store directly, into the artist details page, but i wouldnt recommend that approach, i would prefer doing a server-side call to get the data, and set next caching to invalidate the cache each 30mins to 1 hour so it can refetch it after some time. Nevertheless i have provided an example on the /artist/[id] on how i would get the data from the store if i needed to, i commented out that line.
+
 ## Folder structure
 
 The pages are inside of the /app folder. I like creating a (homepage) for the "/" route just to keep it more organized, and not leave it in the root folder.
