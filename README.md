@@ -35,3 +35,7 @@ The you have /store where the Zustand store lives. Inside /src/hooks i keep all 
 For JEST tests, i placed them directly beside the component index file, when it's related to the component. When it's more general (like a unit test for a function or something), i would place it higher up in a **tests** folder.
 
 For CYPRESS, i placed my test in /cypress/e2e
+
+## CI configuration using Github Actions
+
+As an extra, i have also created a CI configuration using Github Actions, which you can find in .github/workflows. What this allows us to do is whenever a PR is created by a developer, the Jest & Cypress tests will be automatically run, and merging will not be allowed if the tests have not passed.
