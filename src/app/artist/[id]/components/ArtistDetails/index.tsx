@@ -36,7 +36,10 @@ const ArtistDetails = async ({ id }: ArtistDetailsProps) => {
         />
         <div className="relative z-20 h-full flex items-end">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h1
+              className="text-4xl lg:text-5xl font-bold text-white mb-4"
+              data-testid="artist-detail-name"
+            >
               {artist.name}
             </h1>
             <div className="flex gap-2">
