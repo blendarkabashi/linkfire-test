@@ -35,6 +35,7 @@ export const artists: Artist[] = [
           { id: 201, title: "Blinding Lights", genre: "Pop/R&B" },
           { id: 202, title: "Save Your Tears", genre: "Pop/R&B" },
           { id: 203, title: "After Hours", genre: "Pop/R&B" },
+          { id: 204, title: "Alone Again", genre: "Pop/R&B" },
         ],
       },
     ],

@@ -1,4 +1,5 @@
 import { artists } from "@/libs/data";
+import { useArtistsStore } from "@/store/useArtistsStore";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -9,6 +10,7 @@ async function getArtists() {
   // const data = await response.json();
   // return data;
   await new Promise((resolve) => setTimeout(resolve, 1000));
+  useArtistsStore.setState({ artists });
   return artists;
 }
 const ArtistsList = async () => {

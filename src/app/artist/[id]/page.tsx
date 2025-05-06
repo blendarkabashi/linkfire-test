@@ -1,7 +1,19 @@
-import React from "react";
+import { Suspense } from "react";
+import Loading from "./loading";
+import ArtistDetails from "./components/ArtistDetails";
 
-const ArtistDetailPage = () => {
-  return <div></div>;
-};
+interface Props {
+  params: {
+    id: string;
+  };
+}
 
-export default ArtistDetailPage;
+export default async function ArtistDetailPage({ params }: Props) {
+  const { id } = await params;
+
+  return (
+    <Suspense fallback={<Loading />}>
+      <ArtistDetails id={id} />
+    </Suspense>
+  );
+}
